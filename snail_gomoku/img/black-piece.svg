@@ -4,9 +4,9 @@
 	xmlns="http://www.w3.org/2000/svg"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 	version="1.1"
-	width="64"
-	height="64"
-	viewBox="0 0 64 64">
+	width="256"
+	height="256"
+	viewBox="0 0 256 256">
 	<defs>
 		<linearGradient id="LinearGradientBlack">
 			<stop style="stop-color:#ccc;stop-opacity:1" offset="0" />
@@ -18,18 +18,18 @@
 			<stop style="stop-color:black;stop-opacity:0" offset="1" />
 		</linearGradient>
 		<radialGradient id="RadialGradientBlack" xlink:href="#LinearGradientBlack"
-			cx="0" cy="0" r="20" fx="-12" fy="-12" gradientUnits="userSpaceOnUse" />
+			cx="0" cy="0" r="110" fx="-72" fy="-72" gradientUnits="userSpaceOnUse" />
 		<radialGradient id="RadialGradientShadow" xlink:href="#LinearGradientShadow"
-			cx="2" cy="2" fx="2" fy="2" r="20" gradientUnits="userSpaceOnUse" />
-		<circle id="BlackShadow" r="20" cx="2" cy="2"
+			cx="16" cy="16" fx="2" fy="2" r="110" gradientUnits="userSpaceOnUse" />
+		<circle id="BlackShadow" r="110" cx="20" cy="20"
 			style="fill:url(#RadialGradientShadow);stroke:none" />
 		<g id="Black01">
 			<use xlink:href="#BlackShadow" />
-			<circle id="BlackTile" cx="0" cy="0" r="20"
+			<circle id="BlackTile" cx="0" cy="0" r="110"
 				style="fill:url(#RadialGradientBlack);fill-opacity:1;stroke:none" />
 		</g>
 	</defs>
 	<g>
-		<use xlink:href="#Black01" transform="translate(32,32)" />
+		<use xlink:href="#Black01" transform="translate(128, 128)" />
 	</g>
 </svg>
