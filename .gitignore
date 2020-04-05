@@ -3,3 +3,6 @@
 **/*.egg-info
 **/.venv
 **/.vscode
+**/.mypy_cache
+**/.pytest_cache
+tmp/

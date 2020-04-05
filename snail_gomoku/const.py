@@ -2,7 +2,10 @@ from pathlib import Path
 from PySide2.QtGui import QPixmap, QIcon
 from PySide2.QtCore import Qt
 
-PROJECT_DIR = Path(__file__).parent
+PROJECT_DIR = Path(__file__).parent.parent
+IMG_DIR = PROJECT_DIR.joinpath("img")
+BLACK_PIECE_PATH = str(IMG_DIR.joinpath("black-piece.svg"))
+WHITE_PIECE_PATH = str(IMG_DIR.joinpath("white-piece.svg"))
 
 CLOCK_NONE = 0
 CLOCK_LEFT = 1
@@ -20,7 +23,6 @@ ICON_EXCHANGE : QIcon = None
 
 
 def load_imgs(dpi):
-    img_path = PROJECT_DIR.joinpath("img")
     global IMG_BLACK_PIECE
     IMG_BLACK_PIECE = QPixmap(str(img_path.joinpath("black-piece.svg")))
     IMG_BLACK_PIECE.setDevicePixelRatio(dpi)
